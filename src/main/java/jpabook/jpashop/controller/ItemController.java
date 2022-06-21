@@ -78,6 +78,9 @@ public class ItemController {
 
         itemService.saveItem(book);
 
+        //아래가 더 좋은 케이스 유지보수하기에 좋다!!!
+        //itemService.updateItem(itemId , form.getName() , form.getPrice() , form.getStockQuantity());
+
         return "redirect:/items";
     }
 }
