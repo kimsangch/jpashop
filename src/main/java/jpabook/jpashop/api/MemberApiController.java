@@ -67,6 +67,7 @@ public class MemberApiController {
 
     @GetMapping("/api/v3/members")
     public List<Member> membersV3() {
+        String test;
         return memberService.findMembers();
     }
 
