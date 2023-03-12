@@ -54,6 +54,11 @@ public class MemberApiController {
         return memberService.findMembers();
     }
 
+    @GetMapping("/api/v3/members")
+    public List<Member> membersV3() {
+        return memberService.findMembers();
+    }
+
     @GetMapping("/api/v2/members")
     public Result membersV2() {
         List<Member> findMembers = memberService.findMembers();
